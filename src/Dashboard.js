@@ -1,7 +1,6 @@
 import React from 'react';
-import CountDownTimer from './CounterDownTimer'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHourglassHalf } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faHourglassHalf } from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -12,9 +11,13 @@ class DashboardComponent extends React.Component {
         this.state = {
 
         }
+        this.clickHandler=this.clickHandler.bind(this);
     }
 
-
+    clickHandler(e){
+        console.log('ta');
+        this.props.changeview(Number(e.currentTarget.id));
+    }
 
     render() {
 
@@ -22,35 +25,45 @@ class DashboardComponent extends React.Component {
 
             <React.Fragment>
 
-                <div className='container' style={{ marginTop: '25%' }}>
-                    <div className='row'>
-                            <div className='col-12 mb-3 pl-2'>
-                                <div class="card" style={{width: "18rem"}}>
-                                    <img class="card-img-top" src="/images/countdown.png" alt="Card image cap" />
-                                        <div class="card-body">
-                                            <h5 class="card-title">Countdown Timer</h5>
-                                            <p class="card-text">Built with vanilla JS.</p>
-                                            <a href="#" class="btn btn-primary">View CountDownTimer</a>
+                <div className='container-fluid' style={{ marginTop: '25%', marginBottom: '25%' }}>
+                    <div className='row' style={{backgroundColor: 'black'}}>
+                            <div className='col-12 mb-3 ml-2'>
+                                <div className="card" style={{width: "18rem"}}>
+                                    <img className="card-img-top" src="/images/countdown.png" alt="Card" />
+                                        <div className="card-body">
+                                            <h5 className="card-title">Countdown Timer</h5>
+                                            <p className="card-text">Built with vanilla JS.</p>
+                                            <button onClick={this.clickHandler} className="btn btn-primary" id='1'>View CountDownTimer</button>
                                         </div>
                                 </div>
                             </div>
-                            <div className='col-12 pl-2'>
-                                <div class="card" style={{width: "18rem"}}>
-                                    <img class="card-img-top" src="/images/clock.jpeg" alt="Card image cap" />
-                                        <div class="card-body">
-                                            <h5 class="card-title">Digital Clock</h5>
-                                            <p class="card-text">Built with vanilla JS.</p>
-                                            <a href="#" class="btn btn-primary">View Digital Clock</a>
+                            <div className='col-12 mb-3 ml-2'>
+                                <div className="card" style={{width: "18rem"}}>
+                                    <img className="card-img-top" src="/images/clock.jpeg" alt="Card" />
+                                        <div className="card-body">
+                                            <h5 className="card-title">Digital Clock</h5>
+                                            <p className="card-text">Built with vanilla JS.</p>
+                                            <button onClick={this.clickHandler} className="btn btn-primary" id='2'>View Digital Clock</button>
                                         </div>
                                 </div>
                             </div>
-                            <div className='col-12 pl-2'>
-                                <div class="card" style={{width: "18rem"}}>
-                                    <img class="card-img-top" src="/images/tictactoe.png" alt="Card image cap" />
-                                        <div class="card-body">
-                                            <h5 class="card-title">TicTacToe</h5>
-                                            <p class="card-text">Built with vanilla JS.</p>
-                                            <a href="#" class="btn btn-primary">View TicTacToe</a>
+                            <div className='col-12 mb-3 ml-2'>
+                                <div className="card" style={{width: "18rem"}}>
+                                    <img className="card-img-top" src="/images/tictactoe.png" alt="Card" />
+                                        <div className="card-body">
+                                            <h5 className="card-title">TicTacToe</h5>
+                                            <p className="card-text">Built with vanilla JS.</p>
+                                            <button onClick={this.clickHandler} className="btn btn-primary" id='3'>View TicTacToe</button>
+                                        </div>
+                                </div>
+                            </div>
+                            <div className='col-12 mb-3 ml-2'>
+                                <div className="card" style={{width: "18rem"}}>
+                                    <img className="card-img-top" src="/images/todolist.jpeg" alt="Card" />
+                                        <div className="card-body">
+                                            <h5 className="card-title">To Do List</h5>
+                                            <p className="card-text">Built with vanilla JS.</p>
+                                            <button onClick={this.clickHandler} className="btn btn-primary" id='4'>View To Do List</button>
                                         </div>
                                 </div>
                             </div>
