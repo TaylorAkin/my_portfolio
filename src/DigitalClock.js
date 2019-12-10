@@ -35,9 +35,14 @@ class DigitalClock extends React.Component {
 
     return(
       <React.Fragment>
+      <div className='container' style={{marginTop:'20%'}}>
+        <div className='row'>
 
-      <h1>Hello,World</h1>
-      <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+          <h1>Hello,World</h1>
+          <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+
+        </div>
+      </div>
 
       </React.Fragment>
     )
