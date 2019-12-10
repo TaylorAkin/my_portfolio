@@ -79,11 +79,11 @@ class CountDownTimer extends React.Component {
     return (
       <React.Fragment>
         
-        <div className='container flex'>
-          <div className='row mx-auto'>
+        <div className='container-fluid' style={{marginTop:'20%'}}>
+          <div className='row text-center'>
 
           <h1 className=''>CountDownTimer</h1>
-          <h2></h2>
+      
           <h2>{this.state.days}days</h2>
           <h2>{this.state.minutes}minutes</h2>
           <h2>{this.state.seconds}seconds</h2>
