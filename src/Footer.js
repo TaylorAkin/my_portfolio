@@ -24,7 +24,7 @@ class FooterComponent extends React.Component {
         return (
             <React.Fragment>
             {/*Icons and Buttons for footer, sends up id through props to change pagestate to parent*/}
-                <div className="container bg-dark fixed-bottom py-2">
+                <div className="container-fluid bg-dark fixed-bottom py-2">
                     <div className="row pb-1">
                       
                         <div className="col-12 mt-2">

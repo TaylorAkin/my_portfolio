@@ -25,10 +25,10 @@ class DashboardComponent extends React.Component {
 
             <React.Fragment>
 
-                <div className='container-fluid' style={{ marginTop: '25%', marginBottom: '25%' }}>
+                <div className='container-fluid' style={{ marginTop: '100px', marginBottom: '100px' }}>
                     <div className='row' style={{backgroundColor: 'black'}}>
-                            <div className='col-12 mb-3 ml-2'>
-                                <div className="card" style={{width: "18rem"}}>
+                            <div className='col-sm-3 mb-5 d-flex'>
+                                <div className="card mx-auto" style={{width: "18rem"}}>
                                     <img className="card-img-top" src="/images/countdown.png" alt="Card" />
                                         <div className="card-body">
                                             <h5 className="card-title">Countdown Timer</h5>
@@ -37,8 +37,8 @@ class DashboardComponent extends React.Component {
                                         </div>
                                 </div>
                             </div>
-                            <div className='col-12 mb-3 ml-2'>
-                                <div className="card" style={{width: "18rem"}}>
+                            <div className='col-sm-3 mb-5 d-flex'>
+                                <div className="card mx-auto" style={{width: "18rem"}}>
                                     <img className="card-img-top" src="/images/clock.jpeg" alt="Card" />
                                         <div className="card-body">
                                             <h5 className="card-title">Digital Clock</h5>
@@ -47,8 +47,8 @@ class DashboardComponent extends React.Component {
                                         </div>
                                 </div>
                             </div>
-                            <div className='col-12 mb-3 ml-2'>
-                                <div className="card" style={{width: "18rem"}}>
+                            <div className='col-sm-3 mb-5 d-flex'>
+                                <div className="card mx-auto" style={{width: "18rem"}}>
                                     <img className="card-img-top" src="/images/tictactoe.png" alt="Card" />
                                         <div className="card-body">
                                             <h5 className="card-title">TicTacToe</h5>
@@ -57,8 +57,8 @@ class DashboardComponent extends React.Component {
                                         </div>
                                 </div>
                             </div>
-                            <div className='col-12 mb-3 ml-2'>
-                                <div className="card" style={{width: "18rem"}}>
+                            <div className='col-sm-3 mb-5 d-flex'>
+                                <div className="card mx-auto" style={{width: "18rem"}}>
                                     <img className="card-img-top" src="/images/todolist.jpeg" alt="Card" />
                                         <div className="card-body">
                                             <h5 className="card-title">To Do List</h5>
