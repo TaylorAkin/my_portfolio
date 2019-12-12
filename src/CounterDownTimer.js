@@ -1,4 +1,5 @@
 import React from 'react';
+// import './CountDownTimer.scss';
 
 
 
@@ -14,14 +15,14 @@ class CountDownTimer extends React.Component {
       hours: null,
       minutes: null,
       seconds: null,
-     
+
     }
 
 
   }
 
   updateRemainingTime() {
-    var difference = this.state.birthday -  new Date().getTime();
+    var difference = this.state.birthday - new Date().getTime();
 
     //finding total amount for each unit of time
     var totalmilliseconds = difference;
@@ -30,16 +31,16 @@ class CountDownTimer extends React.Component {
     var totalhours = Math.floor(totalminutes / 60);
     var totaldays = Math.floor(totalhours / 24);
 
-//findind the remainder left for each unit of time
+    //findind the remainder left for each unit of time
     // var rmillisec = totalmilliseconds % 1000;
     var rseconds = this.correctNumbers(totalseconds % 60);
     var rminutes = this.correctNumbers(totalminutes % 60);
     var rhours = this.correctNumbers(totalhours % 24);
-  
-    
+
+
 
     this.setState({
-      time: new Date().getTime() - this.state.birthday ,
+      time: new Date().getTime() - this.state.birthday,
       days: totaldays,
       hours: rhours,
       minutes: rminutes,
@@ -50,20 +51,20 @@ class CountDownTimer extends React.Component {
     );
   }
 
-  correctNumbers(n){
+  correctNumbers(n) {
     // get the number, see if it is less than 10
     // if so return "0" + n
-    if(n < 10){
-        return "0" + n;
+    if (n < 10) {
+      return "0" + n;
     } else {
-        return n;
+      return n;
     }
   }
 
 
 
   componentDidMount() {
-    setInterval(()=>this.updateRemainingTime(), 1000)
+    setInterval(() => this.updateRemainingTime(), 1000)
   }
 
 
@@ -78,7 +79,13 @@ class CountDownTimer extends React.Component {
 
     return (
       <React.Fragment>
-        
+
+        {/* <div className="radial-progress">
+			<div className="circle">
+         		<div className="fill"></div>
+        	</div>
+		</div> */}
+
         <div className='container-fluid' style={{marginTop:'20%'}}>
           <div className='row text-center'>
 
