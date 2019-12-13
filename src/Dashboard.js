@@ -39,7 +39,7 @@ class DashboardComponent extends React.Component {
                             </div>
                             <div className='col-sm-3 mb-5 d-flex'>
                                 <div className="card mx-auto" style={{width: "18rem"}}>
-                                    <img className="card-img-top" src="/images/clock.jpeg" alt="Card" />
+                                    <img className="card-img-top" src="/images/clock.jpeg" alt="Card" style={{height:'280px'}}/>
                                         <div className="card-body">
                                             <h5 className="card-title">Digital Clock</h5>
                                             <p className="card-text">Built with vanilla JS.</p>
