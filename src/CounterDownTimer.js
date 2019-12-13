@@ -88,15 +88,20 @@ class CountDownTimer extends React.Component {
 
         <div className='container-fluid' style={{marginTop:'20%'}}>
           <div className='row text-center'>
-
-          <h1 className=''>CountDownTimer</h1>
-      
-          <h2>{this.state.days}days</h2>
-          <h2>{this.state.minutes}minutes</h2>
-          <h2>{this.state.seconds}seconds</h2>
-          <h2>Until my birthday</h2>
-
+              <h1>CountDownTimer</h1>
           </div>
+          <div className='row text-center'>
+              <h2>{this.state.days}days</h2>
+          </div>
+          <div className='row text-center'>
+              <h3>{this.state.minutes}minutes</h3>
+          </div>
+          <div className='row text-center'>
+              <h4>{this.state.seconds}seconds</h4>
+          </div>
+      
+    
+
 
         </div>
 

@@ -105,26 +105,32 @@ class Game extends React.Component {
     }
     
     return (
-      <div className='container' style={{display: 'block'}}>
-          <div className='row'>
-              <div className='col-12'>
-                    <div className="game">
-                      <div className="game-board">
-                        <Board 
-                        squares={current.squares}
-                        onClick={(i) => this.handleClick(i)}
-                        />
-                      </div>
+      <div className='container'>
+          <div className='row justify-content-md-center'>
+              <div className='col-sm-4'></div>
+              <div className='col-sm-4'>
+                  <div className="game">
+                    <div className="game-board">
+                      <Board 
+                      squares={current.squares}
+                      onClick={(i) => this.handleClick(i)}
+                      />
                     </div>
+                  </div>
               </div>
+              <div className='col-sm-4'></div>
           </div>
           <div className='row'>
-
-              <div className="game-info">
-                <div>{status}</div>
-                <ol>{moves}</ol>
+              <div className='col-sm-4'></div>
+              <div className='col-sm-4'>
+              
+                  <div className="game-info text-white">
+                    <div>{status}</div>
+                    <ol>{moves}</ol>
+                  </div>
+              
               </div>
-
+              <div className='col-4'></div>
           </div>
       </div>
     );
